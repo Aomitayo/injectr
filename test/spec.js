@@ -37,7 +37,8 @@ describe("injectr", function () {
 			fs : this.mockFs.mock,
 			path : this.mockPath.mock,
 			vm : this.mockVm.mock,
-			'coffee-script' : this.mockCoffeeScript.mock
+			'coffee-script' : this.mockCoffeeScript.mock,
+			resolve: require('resolve')
 		});
     });
 	it("should read in the selected file", function () {
